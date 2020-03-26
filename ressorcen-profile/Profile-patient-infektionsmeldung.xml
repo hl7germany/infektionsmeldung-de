@@ -133,16 +133,10 @@
       <path value="Patient.address" />
       <sliceName value="aufenthaltsort" />
       <max value="1" />
-    </element>
-    <element id="Patient.address:aufenthaltsort.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Patient.address.use" />
-      <fixedCode value="temp" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
