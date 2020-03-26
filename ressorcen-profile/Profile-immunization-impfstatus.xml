@@ -3,12 +3,6 @@
   <meta>
     <lastUpdated value="2018-03-07T18:47:01.502+01:00" />
   </meta>
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.
-
-It describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party.</div>
-  </text>
   <url value="http://fhir.de/StructureDefinition/immunization-impfstatus" />
   <version value="0.9" />
   <name value="ImmunizationImpfstatus" />
