@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
   <name value="Patient_Infektionsmeldung" />
+  <title value="Patient im Zuge der Infektionsmeldung" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>

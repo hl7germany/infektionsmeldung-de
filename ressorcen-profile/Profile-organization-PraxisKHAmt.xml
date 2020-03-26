@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/Profile-organization-PraxisKHAmt" />
   <name value="PraxisKHAmt" />
+  <title value="Einrichtung des Gesundheitswesen, z.B. Praxis, Krankenhaus oder Gesundheitsamt" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
