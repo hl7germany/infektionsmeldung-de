@@ -1,3 +1,3 @@
 # infektionsmeldung-de
 
-![alt text](/infektionsmeldung-de/meldung_UML.png)
+![alt text](https://github.com/hl7germany/infektionsmeldung-de/blob/master/meldung_UML.png)
