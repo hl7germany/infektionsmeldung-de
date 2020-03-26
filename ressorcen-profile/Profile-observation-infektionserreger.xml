@@ -107,6 +107,10 @@
         <code value="Coding" />
         <profile value="http://fhir.de/StructureDefinition/CodingSnomed" />
       </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/organism-uv-ips" />
+      </binding>
     </element>
     <element id="Observation.bodySite">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
