@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/observation-erreger" />
-  <name value="ObservationErreger" />
+  <version value="0.9" />
+  <name value="ObservationKrankheitserreger" />
+  <title value="Krankheitserreger" />
   <status value="draft" />
+  <date value="2020-03-26" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <description value="Krankheitserreger wie Bakterien, Viren oder Pilze" />
+  <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="workflow" />
