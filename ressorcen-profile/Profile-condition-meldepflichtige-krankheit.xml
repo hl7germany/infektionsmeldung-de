@@ -262,6 +262,16 @@
       <path value="Condition.recordedDate" />
       <mustSupport value="true" />
     </element>
+    <element id="Condition.evidence">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.evidence" />
+      <mustSupport value="true" />
+    </element>
     <element id="Condition.evidence.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -278,6 +288,19 @@
         <strength value="example" />
         <valueSet value="http://fhir.ch/ig/covid-19-prom/ValueSet/covid-19-prom" />
       </binding>
+    </element>
+    <element id="Condition.evidence.detail.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.evidence.detail.reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://fhir.de/StructureDefinition/observation-erreger" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
