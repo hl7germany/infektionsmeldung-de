@@ -17,6 +17,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition">
+      <path value="Condition" />
+      <mustSupport value="true" />
+    </element>
     <element id="Condition.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -26,6 +30,7 @@
       </extension>
       <path value="Condition.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -236,6 +241,26 @@
         <code value="Coding" />
         <profile value="http://fhir.de/StructureDefinition/CodingSnomed" />
       </type>
+    </element>
+    <element id="Condition.onset[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.onset[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.recordedDate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.recordedDate" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
