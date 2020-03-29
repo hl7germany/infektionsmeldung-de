@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://fhir.de/ValueSet/Covid19Symptomatik",
+  "name": "Covid19Symptomatik",
+  "title": "Covid19Symptomatik",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+        "concept": [
+          {
+            "code": "R50.9",
+            "display": "Fieber, nicht näher bezeichnet"
+          },
+          {
+            "code": "R50.88",
+            "display": "Fieber mit Schüttelfrost"
+          },
+          {
+            "code": "R05",
+            "display": "Husten"
+          },
+          {
+            "code": "J80.09",
+            "display": "Atemnotsyndrom des ErwachsenenARDS], Schweregrad nicht näher bezeichnet"
+          },
+          {
+            "code": "R06.88",
+            "display": "Sonstige und nicht näher bezeichnete Störungen der Atmung"
+          },
+          {
+            "code": "A09.0",
+            "display": "Sonstige und nicht näher bezeichnete Gastroenteritis und Kolitis infektiösen Ursprungs"
+          },
+          {
+            "code": "J18.9",
+            "display": "Pneumonie, nicht näher bezeichnet"
+          },
+          {
+            "code": "R43.8",
+            "display": "Sonstige und nicht näher bezeichnete Störungen des Geruchs- und Geschmackssinnes"
+          }
+        ]
+      }
+    ]
+  }
+}

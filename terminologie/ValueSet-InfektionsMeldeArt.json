@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://fhir.de/ValueSet/InfektionsMeldeArt",
+  "name": "InfektionsMeldeArt",
+  "title": "InfektionsMeldeArt",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "display": "verdacht",
+            "code": "unconfirmed"
+          },
+          {
+            "display": "bestätigt",
+            "code": "confirmed"
+          },
+          {
+            "display": "ausgeschlossen",
+            "code": "refuted"
+          }
+        ],
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      }
+    ]
+  }
+}
