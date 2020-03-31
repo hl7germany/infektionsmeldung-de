@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://fhir.de/ValueSet/Covid19Symptomatik-sct",
+  "name": "Covid19SymptomatikSCT",
+  "title": "Covid19SymptomatikSCT",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": " http://snomed.info/sct/",
+        "concept": [
+          {
+            "code": "386661006",
+            "display": "Fieber"
+          },
+          {
+            "code": "43724002",
+            "display": "Schüttelfrost"
+          },
+          {
+            "code": "49727002",
+            "display": "Husten"
+          },
+          {
+            "code": "161941007",
+            "display": "Atemnot"
+          },
+          {
+            "code": "230145002",
+            "display": "Atembeschwerden"
+          },
+          {
+            "code": "62315008",
+            "display": "Durchfall"
+          },
+          {
+            "code": "233604007",
+            "display": "Pneumonie"
+          },
+          {
+            "code": "44169009",
+            "display": "Geruch- und Geschmackverlust"
+          }
+        ]
+      }
+    ]
+  }
+}
