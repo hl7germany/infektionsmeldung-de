@@ -185,17 +185,6 @@
       <path value="Immunization.doseQuantity" />
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.performer">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Immunization.performer" />
-      <max value="1" />
-      <mustSupport value="false" />
-    </element>
     <element id="Immunization.performer.actor">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />

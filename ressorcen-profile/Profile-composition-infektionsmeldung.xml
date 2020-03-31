@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/StructureDefinition/composition-infektionsmeldung" />
+  <version value="0.9" />
+  <name value="CompositionInfektionsmeldung" />
+  <title value="Infektionsmeldung" />
+  <status value="draft" />
+  <date value="2020-03-31" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <description value="Profil einer Composition für eine ärztliche Meldung meldepflichtiger Erkrankungen." />
+  <copyright value="HL7 Deutschland e.V." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Composition.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Composition.subject.reference" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
+      </type>
+    </element>
+    <element id="Composition.subject.reference.address">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Composition.subject.reference.address" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="use" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Composition.author">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Composition.author" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Composition.author.reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://fhir.de/StructureDefinition/Profile-practitioner-meldendePerson" />
+      </type>
+    </element>
+    <element id="Composition.author.reference.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Composition.author.reference.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
