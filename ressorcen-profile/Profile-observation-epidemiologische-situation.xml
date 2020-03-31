@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/observation-epidemiologische-situation" />
+  <version value="0.9" />
   <name value="ObservationEpidemiologischeSituation" />
+  <title value="Epidemiologische Situation" />
   <status value="draft" />
+  <date value="2020-03-31" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="workflow" />
