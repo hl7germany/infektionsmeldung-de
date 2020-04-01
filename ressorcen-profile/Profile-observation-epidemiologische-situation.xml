@@ -45,19 +45,21 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.focus">
+    <element id="Observation.subject">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use" />
+        <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.focus" />
+      <path value="Observation.subject" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
         <targetProfile value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
       </type>
       <mustSupport value="true" />

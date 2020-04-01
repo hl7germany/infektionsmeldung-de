@@ -63,35 +63,24 @@
         <valueSet value="http://fhir.de/ValueSet/Covid19Symptomatik" />
       </binding>
     </element>
-    <element id="Observation.subject.reference">
+    <element id="Observation.subject">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.subject.reference" />
-      <type>
-        <code value="string" />
-        <profile value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
-      </type>
-    </element>
-    <element id="Observation.subject.reference.address">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.subject.reference.address" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="use" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+      <path value="Observation.subject" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <targetProfile value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.focus">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -135,7 +124,7 @@
       <binding>
         <strength value="required" />
         <description value="Presence of symptom" />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/presence" />
+        <valueSet value="http://loinc.org/vs/LL1937-3" />
       </binding>
     </element>
     <element id="Observation.value[x].coding.system">

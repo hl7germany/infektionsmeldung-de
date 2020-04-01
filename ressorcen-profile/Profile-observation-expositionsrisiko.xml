@@ -159,16 +159,6 @@
       <path value="Observation.specimen" />
       <max value="0" />
     </element>
-    <element id="Observation.device">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.device" />
-      <max value="0" />
-    </element>
     <element id="Observation.referenceRange">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
