@@ -6,7 +6,7 @@ Das nachfolgende Modell fasst die Daten aus verschiedenen Meldefomularen zusamme
 
 ![alt text](https://github.com/hl7germany/infektionsmeldung-de/blob/master/meldung_UML.png)
 
-##FHIR-Bundle
+## FHIR-Bundle
 
 Aus den bisherigen FHIR-Profilen und Profilkomponenten lässt sich folgendes Bundle erstellen:
 
