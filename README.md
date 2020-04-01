@@ -1,6 +1,6 @@
 # infektionsmeldung-de
 
-##vereinfachtes Datenmodell
+## Vereinfachtes Datenmodell
 
 Das nachfolgende Modell fasst die Daten aus verschiedenen Meldefomularen zusammen.
 
