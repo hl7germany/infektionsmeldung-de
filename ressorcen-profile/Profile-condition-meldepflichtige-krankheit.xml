@@ -199,117 +199,20 @@
       <path value="Condition.code.coding.display" />
       <fixedString value="COVID-19" />
     </element>
-    <element id="Condition.bodySite.coding">
+    <element id="Condition.subject">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Condition.bodySite.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Condition.bodySite.coding:ICD-10-GM-Seitenlokalisation">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.bodySite.coding" />
-      <sliceName value="ICD-10-GM-Seitenlokalisation" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation" />
-      </binding>
-    </element>
-    <element id="Condition.bodySite.coding:ICD-10-GM-Seitenlokalisation.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.bodySite.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Condition.bodySite.coding:ICD-10-GM-Seitenlokalisation.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.bodySite.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Condition.bodySite.coding:SNOMED">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.bodySite.coding" />
-      <sliceName value="SNOMED" />
-      <max value="1" />
+      <path value="Condition.subject" />
       <type>
-        <code value="Coding" />
-        <profile value="http://fhir.de/StructureDefinition/CodingSnomed" />
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
       </type>
-    </element>
-    <element id="Condition.subject.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.subject.reference" />
-      <type>
-        <code value="string" />
-        <profile value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
-      </type>
-    </element>
-    <element id="Condition.subject.reference.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.subject.reference.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type.coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Condition.subject.reference.address">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.subject.reference.address" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="use" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Condition.onset[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -340,23 +243,6 @@
       </extension>
       <path value="Condition.evidence" />
       <mustSupport value="true" />
-    </element>
-    <element id="Condition.evidence.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.evidence.code.coding" />
-      <type>
-        <code value="Coding" />
-        <profile value="http://fhir.de/StructureDefinition/CodingSnomed" />
-      </type>
-      <binding>
-        <strength value="example" />
-        <valueSet value="http://fhir.ch/ig/covid-19-prom/ValueSet/covid-19-prom" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
