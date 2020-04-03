@@ -96,9 +96,94 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
+      <max value="0" />
+    </element>
+    <element id="Observation.interpretation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.interpretation" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationInterpretation" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Lab_Titer_Immunity" />
+      </binding>
+    </element>
+    <element id="Observation.interpretation.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.interpretation.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.interpretation.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.interpretation.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.interpretation.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.interpretation.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.interpretation.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.interpretation.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Observation.interpretation.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.interpretation.text" />
+      <min value="1" />
+    </element>
+    <element id="Observation.note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.note" />
+      <max value="1" />
     </element>
     <element id="Observation.bodySite">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
