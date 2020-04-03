@@ -40,6 +40,10 @@
           {
             "code": "R43.8",
             "display": "Sonstige und nicht näher bezeichnete Störungen des Geruchs- und Geschmackssinnes"
+          },
+          {
+            "code": "R07.0",
+            "display": "Halsschmerzen"
           }
         ]
       }
