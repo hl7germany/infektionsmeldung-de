@@ -40,6 +40,10 @@
           {
             "code": "44169009",
             "display": "Geruch- und Geschmackverlust"
+          },
+          {
+            "code": "162397003",
+            "display": "Halsschmerzen"
           }
         ]
       }
