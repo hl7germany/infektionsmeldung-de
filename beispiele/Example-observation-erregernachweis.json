@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "profile": [
+            "http://fhir.de/StructureDefinition/observation-erreger"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "laboratory",
+                    "system": "http://hl7.org/fhir/ValueSet/observation-category"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "code": "41852-5",
+                "display": "Microorganism or agent identified Nom (Unsp spec)",
+                "system": "http://loinc.org"
+            }
+        ]
+    },
+    "effectiveDateTime": "2020-04-04",
+    "method": {
+        "coding": [
+            {
+                "code": "398545005",
+                "display": "Nucleic acid assay",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "status": "final",
+    "subject": {
+        "reference": "Patient/example"
+    },
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "840533007",
+                "display": "SARS-CoV-2",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "resourceType": "Observation"
+}

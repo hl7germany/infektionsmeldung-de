@@ -2,7 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/observation-impfstatus" />
   <name value="ObservationImpfstatus" />
+  <title value="Impfstatus" />
   <status value="draft" />
+  <date value="2020-04-03" />
+  <publisher value="HL7 Deutschland e.V." />
+  <description value="Impfstatus einer Patientin oder eines Patienten" />
+  <copyright value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="workflow" />
