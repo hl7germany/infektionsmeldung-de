@@ -87,8 +87,6 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
         <targetProfile value="http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung" />
       </type>
       <mustSupport value="true" />
