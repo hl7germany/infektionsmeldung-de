@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://fhir.de/ValueSet/InfektionExposition-sct",
+  "name": "InfektionExpositionSCT",
+  "title": "InfektionExpositionSCT",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": " http://snomed.info/sct/",
+        "concept": [
+          {
+            "code": "285201006",
+            "display": "Hospital environment (environment)"
+          },
+          {
+            "code": "413817003",
+            "display": "Child day care center (environment)"
+          },
+          {
+            "code": "42665001",
+            "display": "Nursing home (environment)"
+          },
+          {
+            "code": "30629002",
+            "display": "Retirement home (environment)"
+          },
+          {
+            "code": "285202004",
+            "display": "Community environment (environment)"
+          },
+          {
+            "code": "257698009",
+            "display": "School (environment)"
+          },
+          {
+            "code": "224835003",
+            "display": "Food shop (environment)"
+          },
+          {
+            "code": "365457007",
+            "display": "Foreign travel history finding (finding)"
+          },
+          {
+            "code": "428792000",
+            "display": "Person exposed to disease (person)"
+          }
+        ]
+      }
+    ]
+  }
+}
