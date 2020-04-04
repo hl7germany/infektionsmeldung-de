@@ -157,6 +157,13 @@
       </extension>
       <path value="Observation.method" />
       <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationMethod" />
+        </extension>
+        <strength value="example" />
+        <valueSet value="http://fhir.de/ValueSet/Labormethoden-sct" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
