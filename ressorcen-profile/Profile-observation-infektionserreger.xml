@@ -40,6 +40,11 @@
     <uri value="http://snomed.org/attributebinding" />
     <name value="SNOMED CT Attribute Binding" />
   </mapping>
+  <mapping>
+    <identity value="cda-template" />
+    <uri value="https://art-decor.org/art-decor/decor-templates--ifsgm-?section=templates&amp;id=1.2.276.0.76.10.4013" />
+    <name value="CDA Template Mapping" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
@@ -69,7 +74,6 @@
       </extension>
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -80,7 +84,6 @@
       </extension>
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="41852-5" />
     </element>
     <element id="Observation.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -144,6 +147,23 @@
       </extension>
       <path value="Observation.bodySite" />
       <max value="0" />
+    </element>
+    <element id="Observation.method">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.method" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationMethod" />
+        </extension>
+        <strength value="example" />
+        <valueSet value="http://fhir.de/ValueSet/Labormethoden-sct" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://fhir.de/ValueSet/Labormethoden-sct",
+  "name": "LabormethodenSCT",
+  "title": "LabormethodenSCT",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": " http://snomed.info/sct/",
+        "concept": [
+          {
+            "code": "398545005",
+            "display": "Nucleic acid assay"
+          },
+          {
+            "code": "414464004",
+            "display": "Immunoassay method"
+          },
+          {
+            "code": "61594008",
+            "display": "Microbial culture"
+          }
+        ]
+      }
+    ]
+  }
+}
