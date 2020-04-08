@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/StructureDefinition/observation-epidemiologische-situation" />
+  <url value="http://fhir.de/StructureDefinition/observation-angaben-labor" />
   <version value="0.9" />
-  <name value="ObservationEpidemiologischeSituation" />
+  <name value="ObservationAngabenLabor" />
   <title value="Epidemiologische Situation" />
   <status value="draft" />
   <date value="2020-03-31" />
@@ -60,18 +60,65 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.hasMember">
+    <element id="Observation.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.hasMember" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.de/StructureDefinition/observation-expositionsrisiko" />
-      </type>
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Observation.bodySite">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.method">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.method" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element id="Observation.device">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.device" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.referenceRange" />
+      <max value="0" />
     </element>
     <element id="Observation.component">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -89,7 +136,7 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Observation.component:WahrscheinlicherInfektionsort">
+    <element id="Observation.component:LaborBeauftragt">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -97,10 +144,43 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.component" />
-      <sliceName value="WahrscheinlicherInfektionsort" />
+      <sliceName value="LaborBeauftragt" />
       <max value="1" />
     </element>
-    <element id="Observation.component:WahrscheinlicherInfektionsort.value[x]">
+    <element id="Observation.component:LaborBeauftragt.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:LaborBeauftragt.code.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="721965002" />
+    </element>
+    <element id="Observation.component:LaborBeauftragt.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.component.code.coding.display" />
+      <fixedString value="Laboratory order" />
+    </element>
+    <element id="Observation.component:LaborBeauftragt.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -110,79 +190,7 @@
       <path value="Observation.component.value[x]" />
       <min value="1" />
       <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Observation.component:AufenthaltszeitraumInfektionsort">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component" />
-      <sliceName value="AufenthaltszeitraumInfektionsort" />
-      <max value="1" />
-    </element>
-    <element id="Observation.component:AufenthaltszeitraumInfektionsort.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="Period" />
-      </type>
-    </element>
-    <element id="Observation.component:TeilEinerErkrankungshaeufung">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component" />
-      <sliceName value="TeilEinerErkrankungshaeufung" />
-      <max value="1" />
-    </element>
-    <element id="Observation.component:TeilEinerErkrankungshaeufung.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Observation.component:BeauftragteUntersuchungsstelle">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component" />
-      <sliceName value="BeauftragteUntersuchungsstelle" />
-      <max value="1" />
-    </element>
-    <element id="Observation.component:BeauftragteUntersuchungsstelle.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="string" />
+        <code value="boolean" />
       </type>
     </element>
     <element id="Observation.component:DatumProbenentnahme">
@@ -196,6 +204,39 @@
       <sliceName value="DatumProbenentnahme" />
       <max value="1" />
     </element>
+    <element id="Observation.component:DatumProbenentnahme.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:DatumProbenentnahme.code.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="68963-8" />
+    </element>
+    <element id="Observation.component:DatumProbenentnahme.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.component.code.coding.display" />
+      <fixedString value="Collection date and time of Unspecified specimen" />
+    </element>
     <element id="Observation.component:DatumProbenentnahme.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -208,6 +249,94 @@
       <type>
         <code value="dateTime" />
       </type>
+    </element>
+    <element id="Observation.component:AbstrichEntnommen">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component" />
+      <sliceName value="AbstrichEntnommen" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:AbstrichEntnommen.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:AbstrichEntnommen.code.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="17636008" />
+    </element>
+    <element id="Observation.component:AbstrichEntnommen.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.component.code.coding.display" />
+      <fixedString value="Specimen collection (procedure)" />
+    </element>
+    <element id="Observation.component:AbstrichEntnommen.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Observation.component:NameDesLabors">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component" />
+      <sliceName value="NameDesLabors" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:NameDesLabors.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:NameDesLabors.code.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="68994-3" />
     </element>
   </differential>
 </StructureDefinition>
