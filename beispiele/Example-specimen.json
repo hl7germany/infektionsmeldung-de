@@ -42,7 +42,7 @@
 			"display": "Gabriele Mustermann"
 		}
 	],
-	"receivedTime": "2020-04-06T9:55",
+	"receivedTime": "2020-04-06T9:55:00:00",
 	"request": [
 		{
 			"reference": "ServiceRequest/serReq"
