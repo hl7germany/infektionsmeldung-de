@@ -20,29 +20,7 @@
 			"display": "Gabriele Mustermann"
 		}
 	],
-	"receivedTime": "2020-04-06T09:55",
-	"request": [
-		{
-			"reference": "ServiceRequest/serReq"
-		}
-	]
-},
-
-	"type" :[
-		{
-			"coding" : {
-			"code": "258529004",
-			"system": "http://snomed.info/sct/"
-			}		
-		}
-	],
-	"subject": [
-		{
-			"reference": "Patient/pat",
-			"display": "Gabriele Mustermann"
-		}
-	],
-	"receivedTime": "2020-04-06T9:55:00:00",
+	"receivedTime": "2020-04-06T09:55:00Z",
 	"request": [
 		{
 			"reference": "ServiceRequest/serReq"
