@@ -1,0 +1,66 @@
+{
+	"resourceType": "ServiceRequest",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/servicerequest-laborauftrag"
+		]
+	},
+	"id": "serReq2",
+	"status": "unknown",
+	"intent": "order",
+	"subject": [
+		{
+			"reference": "Patient/pat",
+			"display": "Gabriele Mustermann"
+		}
+	],
+	"authoredOn": "2020-04-06T09:56:00Z",
+	"requester": [
+		{
+			"reference": "Practitioner/melder",
+			"display": "Dr. Müller"
+		}
+	],
+	"performer": [
+		{
+			"reference": "Organization/labor",
+			"display": "Labor Musterhausen"
+		}
+	],
+	"reasonReference": [
+		{
+			"reference": "Condition/con1"
+		}
+	],
+	"specimen": [
+		{
+            "resourceType": "Specimen",
+            "meta": {
+                "profile": [
+                    "http://fhir.de/StructureDefinition/specimen-probeAbstrich"
+                ]
+            },
+            "id": "rachenabstrich",
+            "type": [
+                {
+                    "coding": {
+                        "code": "258529004",
+                        "system": "http://snomed.info/sct/"
+                    }
+                }
+            ],
+            "subject": [
+                {
+                    "reference": "Patient/pat",
+                    "display": "Gabriele Mustermann"
+                }
+            ],
+            "receivedTime": "2020-04-06T09:55:00Z",
+            "request": [
+                {
+                    "reference": "ServiceRequest/serReq"
+                }
+            ]
+        }
+	]
+}

@@ -149,6 +149,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://fhir.de/StructureDefinition/specimen-probeAbstrich" />
+        <aggregation value="contained" />
       </type>
     </element>
   </differential>
