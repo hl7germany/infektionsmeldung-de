@@ -33,6 +33,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Specimen.type" />
+      <min value="1" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="SpecimenType" />
