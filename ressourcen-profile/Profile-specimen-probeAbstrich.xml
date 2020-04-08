@@ -25,6 +25,22 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
   <derivation value="constraint" />
   <differential>
+    <element id="Specimen.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Specimen.type" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SpecimenType" />
+        </extension>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.de/ValueSet/specimen-types" />
+      </binding>
+    </element>
     <element id="Specimen.subject">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
