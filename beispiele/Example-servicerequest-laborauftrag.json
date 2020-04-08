@@ -1,0 +1,41 @@
+{
+	"resourceType": "ServiceRequest",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/servicerequest-laborauftrag"
+		]
+	},
+	"id": "ServiceRequest/serReq",
+	"status": "unknown",
+	"intent": "order",
+	"subject": [
+		{
+			"reference": "Patient/pat",
+			"display": "Gabriele Mustermann"
+		}
+	],
+	"authoredOn": "2020-04-06T09:56",
+	"requester": [
+		{
+			"reference": "Practitioner/melder",
+			"display": "Dr. Müller"
+		}
+	],
+	"performer": [
+		{
+			"reference": "Organization/labor",
+			"display": "Labor Musterhausen"
+		}
+	],
+	"reasonReference": [
+		{
+			"reference": "Condition/con1"
+		}
+	],
+	"specimen": [
+		{
+			"reference": 
+	
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"resourceType": "Specimen",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/specimen-probeAbstrich"
+		]
+	},
+	"id": "Specimen/rachenabstrich",
+	"type": [
+		{
+			"code": "258529004",
+			"system": "http://snomed.info/sct/"		
+		}
+	],
+	"subject": [
+		{
+			"reference": "Patient/pat",
+			"display": "Gabriele Mustermann"
+		}
+	],
+	"receivedTime": "2020-04-06T9:55",
+	"request": [
+		{
+			"reference": "ServiceRequest/serReq"
+		}
+	]
+}

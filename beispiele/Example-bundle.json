@@ -1,337 +1,336 @@
 {
-  "resourceType": "Bundle",
-  "title": "Corona-Meldung",
-  "id": "corona-meldung",
-  "updated": "2020-04-06T10:12:21Z",
-  "category": [
-    {
-      "scheme": "http://hl7.org/fhir/tag",
-      "term": "http://hl7.org/fhir/tag/document"
-    }
-  ],
-  "identifier": "xyz",
-  "type": "document",
-  "entry": [
-    {
-      "resource": {
-        "resourceType": "Composition",
-        "id": "180f511f-97a8-486d-99d9-ed631fe4fc57",
-        "meta": {
-          "lastUpdated": "2020-04-06T10:12:21Z"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Text ..</p></div>"
-        },
-        "status": "final",
-        "type": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "xyz"
-            }
-          ],
-          "text": "Infektionsschutzmeldung Corona"
-        },
-        "subject": {
-          "reference": "Patient/pat",
-          "display": "Gabriele Mustermann"
-        },
-        "date": "2020-04-06T10:30:02Z",
-        "author": [
-          {
-            "reference": "Practitioner/melder",
-            "display": "Dr. Müller"
-          }
-        ],
-        "title": "Infektionsschutzmeldung",
-        "confidentiality": "N",
-        "section": [
-          {
-            "title": "meldepflichtige Krankheit",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "xxxxx",
-                  "display": "xxxxxx"
-                }
-              ]
-            },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... meldepflichtige Krankheit ...  </div>"
-            },
-            "entry": [
-              {
-                "reference": "Condition/con1"
-              }
-            ]
-          },
-          {
-            "title": "epidemiologische Situation",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "xxxxx",
-                  "display": "epid. Situation"
-                }
-              ]
-            },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... epidemiologische Situation ...    </div>"
-            },
-            "entry": [
-              {
-                "reference": "Observation/obs1"
-              }
-            ]
-          },
-          {
-            "title": "Impfstatus",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "xxxx",
-                  "display": "Impfstatus"
-                }
-              ]
-            },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... Impfstatus ...    </div>"
-            },
-            "entry": [
-              {
-                "reference": "Observation/status"
-              }
-            ]
-          },
-          {
-            "title": "Symptome",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "xxxx",
-                  "display": "Symptome"
-                }
-              ]
-            },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n Symptome: Fieber + Husten </div>"
-            },
-            "entry": [
-              {
-                "reference": "Observation/symptom1"
-              },
-              {
-                "reference": "Observation/symptom2"
-              }
-            ]
-          }
-		 ]
-	   } 
-    },
-    {
-      "resource": {
-        "resourceType": "Patient",
-        "id": "Patient/pat",
-		"identifier": [
-		   {
-		      "use": "official",
-			  "type": {
-			    "coding": [
-				  {
-				     "system": "http://fhir.de/Codesystem/identifier-type-de-basis",
-					 "code": "GKV"
-				  }
+	"resourceType": "Bundle",
+	"id": "corona-meldung",
+	"updated": "2020-04-06T10:12:21Z",
+	"category": [
+		{
+			"scheme": "http://hl7.org/fhir/tag",
+			"term": "http://hl7.org/fhir/tag/document"
+		}
+	],
+	"identifier": "xyz",
+	"type": "document",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Composition",
+				"id": "180f511f-97a8-486d-99d9-ed631fe4fc57",
+				"meta": {
+					"lastUpdated": "2020-04-06T10:12:21Z"
+				},
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Text ..</p></div>"
+				},
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "xyz"
+						}
+					],
+					"text": "Infektionsschutzmeldung Corona"
+				},
+				"subject": {
+					"reference": "Patient/pat",
+					"display": "Gabriele Mustermann"
+				},
+				"date": "2020-04-06T10:30:02Z",
+				"author": [
+					{
+						"reference": "Practitioner/melder",
+						"display": "Dr. Müller"
+					}
+				],
+				"title": "Infektionsschutzmeldung",
+				"confidentiality": "N",
+				"section": [
+					{
+						"title": "meldepflichtige Krankheit",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "xxxxx",
+									"display": "xxxxxx"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... meldepflichtige Krankheit ...  </div>"
+						},
+						"entry": [
+							{
+								"reference": "Condition/con1"
+							}
+						]
+					},
+					{
+						"title": "epidemiologische Situation",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "xxxxx",
+									"display": "epid. Situation"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... epidemiologische Situation ...    </div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/obs1"
+							}
+						]
+					},
+					{
+						"title": "Impfstatus",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "xxxx",
+									"display": "Impfstatus"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... Impfstatus ...    </div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/status"
+							}
+						]
+					},
+					{
+						"title": "Symptome",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "xxxx",
+									"display": "Symptome"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n Symptome: Fieber + Husten </div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/symptom1"
+							},
+							{
+								"reference": "Observation/symptom2"
+							}
+						]
+					}
 				]
-			  },
-			  "system": "http://fhir.de/NamingSystem/gkv/kvid-10",
-			  "value": "12345"
-		   }
-		],
-		"active": true,
-		"name": [
-		   {
-		     "use": "official",
-			 "family": "Mustermann",
-			 "given": [
-			   "Gabriele"
-			 ]
-		   }
-		],
-		"gender": "female",
-		"birthDate": "1982-08-22",
-		"deceasedBoolean": false,
-        "address": [
-			{
-			  "use": "home",
-			  "line": [
-				"Musterweg 91"
-			  ],
-			  "city": "Berlin",
-			  "postalCode": "12345",
-			  "country": "D"
 			}
-        ],
-     }
-	},
-	{
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "Practitioner/melder",
-		"identifier": [
-		   {
-		      "use": "official",
-			  "system": "xxxx",
-			  "value": "766554"
-		   }
-		],
-		"active": true,
-		"name": [
-		   {
-		     "use": "official",
-			 "familiy": "Müller",
-		   }
-		],
-		"gender": "male",
-	  }
-	},
-	{
-      "resource": {
-        "resourceType": "Condition",
-        "id": "Condition/con1",
-		"code": {
-		  "coding": [
-			{
-			  "system": "http://snomed.info/sct",
-			  "code": "840539006",
-			  "display": "COVID-19"
-			}
-		  ]
 		},
-        "subject": {
-          "reference": "Patient/d1",
-          "display": "Gabriele Mustermann"
-        }
-	  }
-	},
-	{
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Observation/obs1",
-        "status": "final",
-		"code": {
-		  "coding": [
-			{
-			  "system": "http://snomed.info/sct",
-			  "code": "xxxx",
-			  "display": "xxxx"
+		{
+			"resource": {
+				"resourceType": "Patient",
+				"id": "Patient/pat",
+				"identifier": [
+					{
+						"use": "official",
+						"type": {
+							"coding": [
+								{
+									"system": "http://fhir.de/Codesystem/identifier-type-de-basis",
+									"code": "GKV"
+								}
+							]
+						},
+						"system": "http://fhir.de/NamingSystem/gkv/kvid-10",
+						"value": "12345"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"use": "official",
+						"family": "Mustermann",
+						"given": [
+							"Gabriele"
+						]
+					}
+				],
+				"gender": "female",
+				"birthDate": "1982-08-22",
+				"deceasedBoolean": false,
+				"address": [
+					{
+						"use": "home",
+						"line": [
+							"Musterweg 91"
+						],
+						"city": "Berlin",
+						"postalCode": "12345",
+						"country": "D"
+					}
+				]
 			}
-		  ]
-		}
-	  }
-	},
-	{
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Observation/status",
-        "status": "final",
-		"code": {
-		  "coding": [
-			{
-			  "system": "http://snomed.info/sct",
-			  "code": "31998-8",
-			  "display": "Bordetella pertussis Ab [Presence] in Serum"
-			}
-		  ]
 		},
-		"interpretation": {
-		  "coding": [
-			{
-			  "system": "http://snomed.info/sct",
-			  "code": "191441008:704321009=10828004",
-			  "display": "Acquired immunity, function : Characterizes = Positive"
+		{
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "Practitioner/melder",
+				"identifier": [
+					{
+						"use": "official",
+						"system": "xxxx",
+						"value": "766554"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"use": "official",
+						"familiy": "Müller"
+					}
+				],
+				"gender": "male"
 			}
-		  ]
-		}
-	  }
-	},
-	{
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Observation/symptom1",
-        "status": "final",
-		"code": {
-		  "coding": [
-			{
-			  "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
-			  "code": "R50.88",
-			  "display": "fieber mit Schüttelfrost"
-			}
-		  ]
 		},
-        "subject": {
-          "reference": "Patient/d1",
-          "display": "Gabriele Mustermann"
-        },
-		"valueCoding": {
-		  "coding": [
-			{
-			  "system": "http://loinc.org",
-			  "code": "",
-			  "display": ""
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "Condition/con1",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "840539006",
+							"display": "COVID-19"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/d1",
+					"display": "Gabriele Mustermann"
+				}
 			}
-		  ]
-		}
-	  }
-	},
-	{
-      "resource": {
-        "resourceType": "Observation",
-        "id": "Observation/symptom2",
-        "status": "final",
-		"code": {
-		  "coding": [
-			{
-			  "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
-			  "code": "R05",
-			  "display": "Husten"
-			}
-		  ]
 		},
-        "subject": {
-          "reference": "Patient/d1",
-          "display": "Gabriele Mustermann"
-        },
-		"valueCoding": {
-		  "coding": [
-			{
-			  "system": "http://loinc.org",
-			  "code": "",
-			  "display": ""
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "Observation/obs1",
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "xxxx",
+							"display": "xxxx"
+						}
+					]
+				}
 			}
-		  ]
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "Observation/status",
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "31998-8",
+							"display": "Bordetella pertussis Ab [Presence] in Serum"
+						}
+					]
+				},
+				"interpretation": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "191441008:704321009=10828004",
+							"display": "Acquired immunity, function : Characterizes = Positive"
+						}
+					]
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "Observation/symptom1",
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+							"code": "R50.88",
+							"display": "fieber mit Schüttelfrost"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/d1",
+					"display": "Gabriele Mustermann"
+				},
+				"valueCoding": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "",
+							"display": ""
+						}
+					]
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "Observation/symptom2",
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+							"code": "R05",
+							"display": "Husten"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/d1",
+					"display": "Gabriele Mustermann"
+				},
+				"valueCoding": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "",
+							"display": ""
+						}
+					]
+				}
+			}
 		}
-	  }
+	],
+	"signature": {
+		"type": [
+			{
+				"system": "urn:iso-astm:E1762-95:2013",
+				"code": "1.2.840.10065.1.12.1.1",
+				"display": "Author's Signature"
+			}
+		],
+		"when": "2020-04-06T10:10",
+		"sigFormat": "image/jpg",
+		"data": "dfslfjlfkjsfjsdöfksjdljaioötue8fijn"
 	}
-   ],
-  "signature": {
-     "type": [
-      {
-        "system": "urn:iso-astm:E1762-95:2013",
-        "code": "1.2.840.10065.1.12.1.1",
-        "display": "Author's Signature"
-      }
-	 ],
-	 "when": "2020-04-06T10:10",
-	 "sigFormat": "image/jpg",
-	 "data": "dfslfjlfkjsfjsdöfksjdljaioötue8fijn"
-  }
 }
