@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://fhir.de/ValueSet/specimen-types",
+  "name": "IfSgSpecimenTypes",
+  "title": "IfSG Meldung Specimen Types",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": " http://snomed.info/sct/",
+        "concept": [
+          {
+            "code": "258529004",
+            "display": "Throat swab (specimen)"
+          },
+          {
+            "code": "119297000",
+            "display": "Blood specimen (specimen)"
+          }
+        ]
+      }
+    ]
+  }
+}
