@@ -60,6 +60,21 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Observation.performer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.performer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://fhir.de/StructureDefinition/Profile-practitioner-meldendePerson" />
+        <targetProfile value="http://fhir.de/StructureDefinition/Profile-organization-PraxisKHAmt" />
+      </type>
+    </element>
     <element id="Observation.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
