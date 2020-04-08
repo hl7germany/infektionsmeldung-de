@@ -35,6 +35,22 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="ServiceRequest.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="ServiceRequest.status" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceRequestStatus" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/StructureDefinition/ValueSet/LaboranforderungStatus" />
+      </binding>
+    </element>
     <element id="ServiceRequest.intent">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
