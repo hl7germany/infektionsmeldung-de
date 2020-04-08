@@ -5,11 +5,35 @@
 			"http://fhir.de/StructureDefinition/specimen-probeAbstrich"
 		]
 	},
-	"id": "Specimen/rachenabstrich",
+	"id": "rachenabstrich",
 	"type": [
 		{
+			"coding": {
+				"code": "258529004",
+				"system": "http://snomed.info/sct/"
+			}
+		}
+	],
+	"subject": [
+		{
+			"reference": "Patient/pat",
+			"display": "Gabriele Mustermann"
+		}
+	],
+	"receivedTime": "2020-04-06T09:55",
+	"request": [
+		{
+			"reference": "ServiceRequest/serReq"
+		}
+	]
+},
+
+	"type" :[
+		{
+			"coding" : {
 			"code": "258529004",
-			"system": "http://snomed.info/sct/"		
+			"system": "http://snomed.info/sct/"
+			}		
 		}
 	],
 	"subject": [
