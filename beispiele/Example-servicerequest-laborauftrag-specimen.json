@@ -34,33 +34,35 @@
 	],
 	"specimen": [
 		{
-            "resourceType": "Specimen",
-            "meta": {
-                "profile": [
-                    "http://fhir.de/StructureDefinition/specimen-probeAbstrich"
-                ]
-            },
-            "id": "rachenabstrich",
-            "type": [
-                {
-                    "coding": {
-                        "code": "258529004",
-                        "system": "http://snomed.info/sct/"
-                    }
-                }
-            ],
-            "subject": [
-                {
-                    "reference": "Patient/pat",
-                    "display": "Gabriele Mustermann"
-                }
-            ],
-            "receivedTime": "2020-04-06T09:55:00Z",
-            "request": [
-                {
-                    "reference": "ServiceRequest/serReq"
-                }
-            ]
-        }
+			"contained" : {
+				"resourceType": "Specimen",
+				"meta": {
+					"profile": [
+						"http://fhir.de/StructureDefinition/specimen-probeAbstrich"
+					]
+				},
+				"id": "rachenabstrich",
+				"type": [
+					{
+						"coding": {
+							"code": "258529004",
+							"system": "http://snomed.info/sct/"
+						}
+					}
+				],
+				"subject": [
+					{
+						"reference": "Patient/pat",
+						"display": "Gabriele Mustermann"
+					}
+				],
+				"receivedTime": "2020-04-06T09:55:00Z",
+				"request": [
+					{
+						"reference": "ServiceRequest/serReq"
+					}
+				]
+			}
+		}
 	]
 }
