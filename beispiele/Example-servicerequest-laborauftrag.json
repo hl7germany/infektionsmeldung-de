@@ -5,7 +5,7 @@
 			"http://fhir.de/StructureDefinition/servicerequest-laborauftrag"
 		]
 	},
-	"id": "ServiceRequest/serReq",
+	"id": "serReq",
 	"status": "unknown",
 	"intent": "order",
 	"subject": [
@@ -14,7 +14,7 @@
 			"display": "Gabriele Mustermann"
 		}
 	],
-	"authoredOn": "2020-04-06T09:56:00:00Z",
+	"authoredOn": "2020-04-06T09:56:00Z",
 	"requester": [
 		{
 			"reference": "Practitioner/melder",
@@ -34,8 +34,7 @@
 	],
 	"specimen": [
 		{
-			"reference": 
-	
+			"reference": "Specimen/rachenabstrich"
 		}
 	]
 }
