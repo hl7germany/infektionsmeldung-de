@@ -55,6 +55,19 @@
       <path value="Observation" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.basedOn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.de/StructureDefinition/servicerequest-laborauftrag" />
+      </type>
+    </element>
     <element id="Observation.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
