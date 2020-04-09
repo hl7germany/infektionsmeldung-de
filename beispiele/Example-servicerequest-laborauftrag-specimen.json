@@ -53,12 +53,6 @@
 				}
 			}
 		],
-		"subject": [
-			{
-				"reference": "Patient/pat",
-				"display": "Gabriele Mustermann"
-			}
-		],
 		"receivedTime": "2020-04-06T09:55:00Z",
 		"request": [
 			{
