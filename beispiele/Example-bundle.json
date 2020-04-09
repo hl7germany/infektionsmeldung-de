@@ -486,20 +486,5 @@
 		"who": {"reference":"Practitioner/melder","display":"Dr. Müller"},"when":"2020-04-06T10:10:00Z",
 		"sigFormat": "image/jpg",
 		"data": "dfslfjlfkjsfjsdöfksjdljaioötue8fijn"
-	}{
-		"type": [
-			{
-				"system": "urn:iso-astm:E1762-95:2013",
-				"code": "1.2.840.10065.1.12.1.1",
-				"display": "Author's Signature"
-			}
-		],
-		"who" : {
-			"reference": "Practitioner/melder",
-			"display": "Dr. Müller"
-		},
-		"when": "2020-04-06T10:10:00Z",
-		"sigFormat": "image/jpg",
-		"data": "dfslfjlfkjsfjsdöfksjdljaioötue8fijn"
 	}
 }
