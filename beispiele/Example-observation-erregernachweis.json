@@ -4,6 +4,11 @@
             "http://fhir.de/StructureDefinition/observation-erreger"
         ]
     },
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/laborauftrag"
+        }
+    ],
     "category": [
         {
             "coding": [
