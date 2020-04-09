@@ -53,11 +53,6 @@
 				}
 			}
 		],
-		"receivedTime": "2020-04-06T09:55:00Z",
-		"request": [
-			{
-				"reference": "ServiceRequest/serReq"
-			}
-		]
+		"receivedTime": "2020-04-06T09:55:00Z"
 	}
 }
