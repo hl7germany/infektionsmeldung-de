@@ -1,0 +1,132 @@
+{
+	"resourceType": "Composition",
+	"id": "180f511f-97a8-486d-99d9-ed631fe4fc57",
+	"meta": {
+		"lastUpdated": "2020-04-09T11:12:21Z"
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Text ..</p></div>"
+	},
+	"status": "final",
+	"type": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "* where SCALE_TYP Equal Doc"
+			}
+		],
+		"text": "Infektionsschutzmeldung Corona"
+	},
+	"category": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "26436-6"
+			}
+		],
+		"text": "Laboratory Studies (set)"
+	},
+	"subject": {
+		"reference": "Patient/pat",
+		"display": "Gabriele Mustermann"
+	},
+	"date": "2020-04-09T11:30:02Z",
+	"author": [
+		{
+			"reference": "Practitioner/melder",
+			"display": "Dr. Müller"
+		}
+	],
+	"title": "Infektionsschutzmeldung",
+	"confidentiality": "N",
+	"section": [
+		{
+			"title": "meldepflichtige Krankheit",
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "xxxxx",
+						"display": "xxxxxx"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... meldepflichtige Krankheit ...  </div>"
+			},
+			"entry": [
+				{
+					"reference": "Condition/con1"
+				}
+			]
+		},
+		{
+			"title": "epidemiologische Situation",
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "xxxxx",
+						"display": "epid. Situation"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... epidemiologische Situation ...    </div>"
+			},
+			"entry": [
+				{
+					"reference": "Observation/obs1"
+				}
+			]
+		},
+		{
+			"title": "Impfstatus",
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "xxxx",
+						"display": "Impfstatus"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n... Impfstatus ...    </div>"
+			},
+			"entry": [
+				{
+					"reference": "Observation/status"
+				}
+			]
+		},
+		{
+			"title": "Symptome",
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "xxxx",
+						"display": "Symptome"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n Symptome: Fieber + Husten </div>"
+			},
+			"entry": [
+				{
+					"reference": "Observation/symptom1"
+				},
+				{
+					"reference": "Observation/symptom2"
+				}
+			]
+		}
+	]
+}

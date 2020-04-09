@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "symptom1",
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... q. Symptom ..</p></div>"
+	},
+	"status": "final",
+	"category": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "xxxx",
+				"display": "xxxx"
+			}
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+				"code": "R50.88",
+				"display": "Fieber mit Schüttelfrost"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/pat",
+		"display": "Gabriele Mustermann"
+	},
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "",
+				"display": ""
+			}
+		]
+	}
+}

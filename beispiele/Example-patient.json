@@ -1,0 +1,43 @@
+{
+	"resourceType": "Patient",
+	"id": "pat",
+	"identifier": [
+		{
+			"use": "official",
+			"type": {
+				"coding": [
+					{
+						"system": "http://fhir.de/Codesystem/identifier-type-de-basis",
+						"code": "GKV"
+					}
+				]
+			},
+			"system": "http://fhir.de/NamingSystem/gkv/kvid-10",
+			"value": "12345"
+		}
+	],
+	"active": true,
+	"name": [
+		{
+			"use": "official",
+			"family": "Mustermann",
+			"given": [
+				"Gabriele"
+			]
+		}
+	],
+	"gender": "female",
+	"birthDate": "1982-08-22",
+	"deceasedBoolean": false,
+	"address": [
+		{
+		"use": "home",
+			"line": [
+				"Musterweg 91"
+			],
+			"city": "Berlin",
+			"postalCode": "12345",
+			"country": "D"
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"resourceType": "Observation",
+	"id": "expoRisk",
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Expositionsrisiko ..</p></div>"
+	},
+	"status": "final",
+	"category": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "xxxx",
+				"display": "xxxx"
+			}
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "418715001",
+				"display": "Exposure to potentially harmful entity (event)"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/pat",
+		"display": "Gabriele Mustermann"
+	},
+	"focus": {
+		"reference": "Observation/exp_risk"
+	},
+	"effectivePeriod": {
+		"start": "2020-03-01",
+		"end": "2020-03-10"
+	},
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "30629002",
+				"display": "Retirement home (environment)"
+			}
+		]
+	}
+}

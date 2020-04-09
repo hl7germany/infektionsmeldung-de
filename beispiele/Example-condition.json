@@ -1,0 +1,18 @@
+{
+	"resourceType": "Condition",
+	"id": "con1",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "840539006",
+				"display": "COVID-19"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/pat",
+		"display": "Gabriele Mustermann"
+	},
+	"recordedDate": "2020-04-09"
+}

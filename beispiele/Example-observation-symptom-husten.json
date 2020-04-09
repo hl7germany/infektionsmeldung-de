@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "symptom2",
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... 2. Symptom ..</p></div>"
+	},
+	"status": "final",
+	"category": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "xxxx",
+				"display": "xxxx"
+			}
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+				"code": "R05",
+				"display": "Husten"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/pat",
+		"display": "Gabriele Mustermann"
+	},
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "",
+				"display": ""
+			}
+		]
+	}
+}

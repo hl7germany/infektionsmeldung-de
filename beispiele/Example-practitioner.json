@@ -1,0 +1,19 @@
+{
+	"resourceType": "Practitioner",
+	"id": "melder",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "xxxx",
+			"value": "766554"
+		}
+	],
+	"active": true,
+	"name": [
+		{
+			"use": "official",
+			"family": "Müller"
+		}
+	],
+	"gender": "male"
+}
