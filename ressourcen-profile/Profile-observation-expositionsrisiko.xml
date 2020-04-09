@@ -287,7 +287,7 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="Observation.component:NameInfektionsort">
+    <element id="Observation.component:NameExpositionsort">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -295,9 +295,9 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.component" />
-      <sliceName value="NameInfektionsort" />
+      <sliceName value="NameExpositionsort" />
     </element>
-    <element id="Observation.component:NameInfektionsort.code.coding">
+    <element id="Observation.component:NameExpositionsort.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -308,7 +308,7 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Observation.component:NameInfektionsort.code.coding.system">
+    <element id="Observation.component:NameExpositionsort.code.coding.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -319,7 +319,7 @@
       <min value="1" />
       <fixedUri value="http://loinc.org" />
     </element>
-    <element id="Observation.component:NameInfektionsort.code.coding.code">
+    <element id="Observation.component:NameExpositionsort.code.coding.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -330,7 +330,7 @@
       <min value="1" />
       <fixedCode value="ToDo-name" />
     </element>
-    <element id="Observation.component:NameInfektionsort.value[x]">
+    <element id="Observation.component:NameExpositionsort.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -340,61 +340,6 @@
       <path value="Observation.component.value[x]" />
       <type>
         <code value="string" />
-      </type>
-    </element>
-    <element id="Observation.component:ReiseStartDatum">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component" />
-      <sliceName value="ReiseStartDatum" />
-    </element>
-    <element id="Observation.component:ReiseStartDatum.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.code.coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Observation.component:ReiseStartDatum.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.component:ReiseStartDatum.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <fixedCode value="82752-7" />
-    </element>
-    <element id="Observation.component:ReiseStartDatum.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.value[x]" />
-      <type>
-        <code value="dateTime" />
       </type>
     </element>
     <element id="Observation.component:ReiseLand">
@@ -560,61 +505,6 @@
       <path value="Observation.component.value[x]" />
       <type>
         <code value="string" />
-      </type>
-    </element>
-    <element id="Observation.component:ReiseEndDatum">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component" />
-      <sliceName value="ReiseEndDatum" />
-    </element>
-    <element id="Observation.component:ReiseEndDatum.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.code.coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Observation.component:ReiseEndDatum.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.component:ReiseEndDatum.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <fixedCode value="91560-3" />
-    </element>
-    <element id="Observation.component:ReiseEndDatum.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.value[x]" />
-      <type>
-        <code value="dateTime" />
       </type>
     </element>
   </differential>
