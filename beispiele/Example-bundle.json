@@ -1,7 +1,9 @@
 {
+	"meta" : {
+		"lastupdated" : "2020-04-09T11:12:21Z"
+	}
 	"resourceType": "Bundle",
 	"id": "corona-meldung",
-	"timestamp": "2020-04-09T11:12:21Z",
 	"id": "xyz",
 	"type": "document",
 	"entry": [
@@ -187,7 +189,7 @@
 		{
 			"resource": {
 				"resourceType": "Practitioner",
-				"id": "Practitioner/melder",
+				"id": "melder",
 				"identifier": [
 					{
 						"use": "official",
@@ -367,7 +369,7 @@
 					"reference": "Patient/pat",
 					"display": "Gabriele Mustermann"
 				},
-				"valueCoding": {
+				"valueCodeableConcept": {
 					"coding": [
 						{
 							"system": "http://loinc.org",
@@ -409,7 +411,7 @@
 					"reference": "Patient/pat",
 					"display": "Gabriele Mustermann"
 				},
-				"valueCoding": {
+				"valueCodeableConcept": {
 					"coding": [
 						{
 							"system": "http://loinc.org",
@@ -458,7 +460,7 @@
 					"start": "2020-03-01",
 					"end": "2020-03-10"
 				},
-				"valueCoding": {
+				"valueCodeableConcept": {
 					"coding": [
 						{
 							"system": "http://snomed.info/sct",
@@ -478,7 +480,22 @@
 				"display": "Author's Signature"
 			}
 		],
-		"when": "2020-04-06T10:10",
+		"who": {"reference":"Practitioner/melder","display":"Dr. Müller"},"when":"2020-04-06T10:10:00Z",
+		"sigFormat": "image/jpg",
+		"data": "dfslfjlfkjsfjsdöfksjdljaioötue8fijn"
+	}{
+		"type": [
+			{
+				"system": "urn:iso-astm:E1762-95:2013",
+				"code": "1.2.840.10065.1.12.1.1",
+				"display": "Author's Signature"
+			}
+		],
+		"who" : {
+			"reference": "Practitioner/melder",
+			"display": "Dr. Müller"
+		},
+		"when": "2020-04-06T10:10:00Z",
 		"sigFormat": "image/jpg",
 		"data": "dfslfjlfkjsfjsdöfksjdljaioötue8fijn"
 	}
