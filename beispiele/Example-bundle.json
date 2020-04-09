@@ -2,7 +2,7 @@
 	"resourceType": "Bundle",
 	"id": "corona-meldung",
 	"timestamp": "2020-04-09T11:12:21Z",
-	"identifier": "xyz",
+	"id": "xyz",
 	"type": "document",
 	"entry": [
 		{
