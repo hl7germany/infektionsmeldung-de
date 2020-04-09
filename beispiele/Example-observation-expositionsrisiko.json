@@ -33,9 +33,6 @@
 		"reference": "Patient/pat",
 		"display": "Gabriele Mustermann"
 	},
-	"focus": {
-		"reference": "Observation/exp_risk"
-	},
 	"effectivePeriod": {
 		"start": "2020-03-01",
 		"end": "2020-03-10"
