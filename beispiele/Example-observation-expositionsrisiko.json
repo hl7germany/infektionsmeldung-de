@@ -17,15 +17,18 @@
 				"system": "http://snomed.info/sct",
 				"code": "xxxx",
 				"display": "xxxx"
+			},
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+				"code": "social-history"
 			}
 		]
 	},
 	"code": {
 		"coding": [
 			{
-				"system": "http://snomed.info/sct",
-				"code": "418715001",
-				"display": "Exposure to potentially harmful entity (event)"
+				"system": "http://loinc.org",
+				"code": "8691-8"
 			}
 		]
 	},
@@ -45,5 +48,62 @@
 				"display": "Retirement home (environment)"
 			}
 		]
-	}
+	},
+	"component": [
+		{
+			"code" : {
+				"coding": [
+					{
+						"system" : "http://loinc.org",
+						"code": "ToDo-active"
+					}
+				]
+			},
+			"valueBoolean" : false 
+		},
+		{
+			"code" : {
+				"coding": [
+					{
+						"system" : "http://loinc.org",
+						"code": "ToDo-haeufung"
+					}
+				]
+			},
+			"valueBoolean" : false 
+		},
+		{
+			"code" : {
+				"coding": [
+					{
+						"system" : "http://loinc.org",
+						"code": "ToDo-name"
+					}
+				]
+			},
+			"valueString" : "Pflegeheim ABC"
+		},
+		{
+			"code" : {
+				"coding": [
+					{
+						"system" : "http://loinc.org",
+						"code": "ToDo-name"
+					}
+				]
+			},
+			"valueString" : "Pflegeheim ABC"
+		},
+		{
+			"code" : {
+				"coding": [
+					{
+						"system" : "http://loinc.org",
+						"code": "ToDo-ort"
+					}
+				]
+			},
+			"valueString" : "Musterhausen"
+		}
+	]
 }
