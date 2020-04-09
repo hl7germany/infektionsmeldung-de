@@ -1,12 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"id": "corona-meldung",
-	"category": [
-		{
-			"scheme": "http://hl7.org/fhir/tag",
-			"term": "http://hl7.org/fhir/tag/document"
-		}
-	],
+	"timestamp": "2020-04-09T11:12:21Z",
 	"identifier": "xyz",
 	"type": "document",
 	"entry": [
