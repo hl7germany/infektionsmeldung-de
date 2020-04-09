@@ -142,7 +142,7 @@
 		{
 			"resource": {
 				"resourceType": "Patient",
-				"id": "Patient/pat",
+				"id": "pat",
 				"identifier": [
 					{
 						"use": "official",
@@ -199,7 +199,7 @@
 				"name": [
 					{
 						"use": "official",
-						"familiy": "Müller"
+						"family": "Müller"
 					}
 				],
 				"gender": "male"
@@ -208,7 +208,7 @@
 		{
 			"resource": {
 				"resourceType": "Condition",
-				"id": "Condition/con1",
+				"id": "con1",
 				"code": {
 					"coding": [
 						{
@@ -219,7 +219,7 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/d1",
+					"reference": "Patient/pat",
 					"display": "Gabriele Mustermann"
 				},
 				"recordedDate": "2020-04-09"
@@ -228,7 +228,7 @@
 		{
 			"resource": {
 				"resourceType": "Observation",
-				"id": "Observation/obs1",
+				"id": "obs1",
 				"text": {
 					"status": "generated",
 					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Obs. f. epidem. Sit. ..</p></div>"
@@ -314,7 +314,7 @@
 		{
 			"resource": {
 				"resourceType": "Observation",
-				"id": "Observation/status",
+				"id": "status",
 				"status": "final",
 				"code": {
 					"coding": [
@@ -339,7 +339,7 @@
 		{
 			"resource": {
 				"resourceType": "Observation",
-				"id": "Observation/symptom1",
+				"id": "symptom1",
 				"text": {
 					"status": "generated",
 					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... q. Symptom ..</p></div>"
@@ -364,7 +364,7 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/d1",
+					"reference": "Patient/pat",
 					"display": "Gabriele Mustermann"
 				},
 				"valueCoding": {
@@ -381,7 +381,7 @@
 		{
 			"resource": {
 				"resourceType": "Observation",
-				"id": "Observation/symptom2",
+				"id": "symptom2",
 				"text": {
 					"status": "generated",
 					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... 2. Symptom ..</p></div>"
@@ -406,7 +406,7 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/d1",
+					"reference": "Patient/pat",
 					"display": "Gabriele Mustermann"
 				},
 				"valueCoding": {
@@ -423,7 +423,7 @@
 		{
 			"resource": {
 				"resourceType": "Observation",
-				"id": "Observation/expo_risk",
+				"id": "expo_risk",
 				"text": {
 					"status": "generated",
 					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Expositionsrisiko ..</p></div>"
@@ -448,7 +448,7 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/d1",
+					"reference": "Patient/pat",
 					"display": "Gabriele Mustermann"
 				},
 				"focus": {
