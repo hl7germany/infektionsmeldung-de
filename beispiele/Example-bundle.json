@@ -1,10 +1,13 @@
 {
 	"meta" : {
 		"lastupdated" : "2020-04-09T11:12:21Z"
-	}
+	},
 	"resourceType": "Bundle",
 	"id": "corona-meldung",
-	"id": "xyz",
+	"identifier" : {
+	 	"value" : "xyz",
+	 	"system" : "fhir.de/test"
+	 },
 	"type": "document",
 	"entry": [
 		{
