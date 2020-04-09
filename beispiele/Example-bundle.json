@@ -1,7 +1,7 @@
 {
 	"resourceType": "Bundle",
 	"id": "corona-meldung",
-	"updated": "2020-04-06T10:12:21Z",
+	"updated": "2020-04-09T11:12:21Z",
 	"category": [
 		{
 			"scheme": "http://hl7.org/fhir/tag",
@@ -16,7 +16,7 @@
 				"resourceType": "Composition",
 				"id": "180f511f-97a8-486d-99d9-ed631fe4fc57",
 				"meta": {
-					"lastUpdated": "2020-04-06T10:12:21Z"
+					"lastUpdated": "2020-04-09T11:12:21Z"
 				},
 				"text": {
 					"status": "generated",
@@ -27,16 +27,25 @@
 					"coding": [
 						{
 							"system": "http://loinc.org",
-							"code": "xyz"
+							"code": "* where SCALE_TYP Equal Doc"
 						}
 					],
 					"text": "Infektionsschutzmeldung Corona"
+				},
+				"category": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "26436-6"
+						}
+					],
+					"text": "Laboratory Studies (set)"
 				},
 				"subject": {
 					"reference": "Patient/pat",
 					"display": "Gabriele Mustermann"
 				},
-				"date": "2020-04-06T10:30:02Z",
+				"date": "2020-04-09T11:30:02Z",
 				"author": [
 					{
 						"reference": "Practitioner/melder",
@@ -218,14 +227,28 @@
 				"subject": {
 					"reference": "Patient/d1",
 					"display": "Gabriele Mustermann"
-				}
+				},
+				"recordedDate": "2020-04-09"
 			}
 		},
 		{
 			"resource": {
 				"resourceType": "Observation",
 				"id": "Observation/obs1",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Obs. f. epidem. Sit. ..</p></div>"
+				},
 				"status": "final",
+				"category": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "xxxx",
+							"display": "xxxx"
+						}
+					]
+				},
 				"code": {
 					"coding": [
 						{
@@ -234,7 +257,64 @@
 							"display": "xxxx"
 						}
 					]
-				}
+				},
+				"subject": {
+					"reference": "Patient/pat",
+					"display": "Gabriele Mustermann"
+				},
+				"performer": {
+					"reference": "Pratictioner/melder",
+					"display": "Dr. Müller"
+				},
+				"component": [
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "721965002",
+									"display": "Laboratory order"
+								}
+							]
+						},
+						"valueBoolean": true
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "68963-8",
+									"display": "Collection date and time of Unspecified specimen"
+								}
+							]
+						},
+						"valueDateTime": "2020-04-09T11:12:21Z"
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "17636008",
+									"display": "Specimen collection (procedure)"
+								}
+							]
+						},
+						"valueBoolean": true
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "68994-3"
+								}
+							]
+						},
+						"valueString": "Zentrallabor Kleinpusemuckel, Irgendwo"
+					}
+				]
 			}
 		},
 		{
@@ -266,13 +346,26 @@
 			"resource": {
 				"resourceType": "Observation",
 				"id": "Observation/symptom1",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... q. Symptom ..</p></div>"
+				},
 				"status": "final",
+				"category": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "xxxx",
+							"display": "xxxx"
+						}
+					]
+				},
 				"code": {
 					"coding": [
 						{
 							"system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
 							"code": "R50.88",
-							"display": "fieber mit Schüttelfrost"
+							"display": "Fieber mit Schüttelfrost"
 						}
 					]
 				},
@@ -295,7 +388,20 @@
 			"resource": {
 				"resourceType": "Observation",
 				"id": "Observation/symptom2",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... 2. Symptom ..</p></div>"
+				},
 				"status": "final",
+				"category": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "xxxx",
+							"display": "xxxx"
+						}
+					]
+				},
 				"code": {
 					"coding": [
 						{
@@ -319,6 +425,54 @@
 					]
 				}
 			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"id": "Observation/expo_risk",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Expositionsrisiko ..</p></div>"
+				},
+				"status": "final",
+				"category": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "xxxx",
+							"display": "xxxx"
+						}
+					]
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "418715001",
+							"display": "Exposure to potentially harmful entity (event)"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/d1",
+					"display": "Gabriele Mustermann"
+				},
+				"focus": {
+					"reference": "Observation/exp_risk",
+				},
+				"effectivePeriod": {
+					"start: "2020-03-01",
+					"end": "2020-03-10"
+				},
+				"valueCoding": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "30629002",
+							"display": "Retirement home (environment)"
+						}
+					]
+				}
 		}
 	],
 	"signature": {
