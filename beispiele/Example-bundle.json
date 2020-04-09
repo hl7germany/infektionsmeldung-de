@@ -1,6 +1,6 @@
 {
 	"meta" : {
-		"lastupdated" : "2020-04-09T11:12:21Z"
+		"lastUpdated" : "2020-04-09T11:12:21Z"
 	},
 	"resourceType": "Bundle",
 	"id": "corona-meldung",
@@ -428,7 +428,7 @@
 		{
 			"resource": {
 				"resourceType": "Observation",
-				"id": "expo_risk",
+				"id": "expoRisk",
 				"text": {
 					"status": "generated",
 					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Expositionsrisiko ..</p></div>"
@@ -483,8 +483,12 @@
 				"display": "Author's Signature"
 			}
 		],
-		"who": {"reference":"Practitioner/melder","display":"Dr. Müller"},"when":"2020-04-06T10:10:00Z",
+		"who": {
+			"reference":"Practitioner/melder",
+			"display":"Dr. Müller"
+		},
+		"when":"2020-04-06T10:10:00Z",
 		"sigFormat": "image/jpg",
-		"data": "dfslfjlfkjsfjsdöfksjdljaioötue8fijn"
+		"data": "dfslfjlfkjsfjsdoefksjdljaiooetue8fijn"
 	}
 }
