@@ -1,6 +1,11 @@
 {
 	"resourceType": "Observation",
 	"id": "symptom1",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/ObservationCovid19Symptom"
+		]
+	},
 	"text": {
 		"status": "generated",
 		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... q. Symptom ..</p></div>"

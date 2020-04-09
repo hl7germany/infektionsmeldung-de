@@ -1,6 +1,11 @@
 {
 	"resourceType": "Practitioner",
 	"id": "melder",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/Profile-practitioner-meldendePerson"
+		]
+	},
 	"identifier": [
 		{
 			"use": "official",

@@ -1,6 +1,11 @@
 {
 	"resourceType": "Condition",
 	"id": "con1",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/condition-meldepflichtige-krankheit"
+		]
+	},
 	"code": {
 		"coding": [
 			{

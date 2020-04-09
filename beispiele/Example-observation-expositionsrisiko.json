@@ -1,6 +1,11 @@
 {
 	"resourceType": "Observation",
 	"id": "expoRisk",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/observation-expositionsrisiko"
+		]
+	},
 	"text": {
 		"status": "generated",
 		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>... Expositionsrisiko ..</p></div>"

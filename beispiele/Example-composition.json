@@ -2,7 +2,9 @@
 	"resourceType": "Composition",
 	"id": "180f511f-97a8-486d-99d9-ed631fe4fc57",
 	"meta": {
-		"lastUpdated": "2020-04-09T11:12:21Z"
+		"profile": [
+			"http://fhir.de/StructureDefinition/composition-infektionsmeldung"
+		]
 	},
 	"text": {
 		"status": "generated",

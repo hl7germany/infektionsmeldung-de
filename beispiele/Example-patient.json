@@ -1,6 +1,11 @@
 {
 	"resourceType": "Patient",
 	"id": "pat",
+	"meta": {
+		"profile": [
+			"http://fhir.de/StructureDefinition/Profile-patient-infektionsmeldung"
+		]
+	},
 	"identifier": [
 		{
 			"use": "official",
