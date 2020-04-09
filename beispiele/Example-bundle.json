@@ -1,7 +1,6 @@
 {
 	"resourceType": "Bundle",
 	"id": "corona-meldung",
-	"updated": "2020-04-09T11:12:21Z",
 	"category": [
 		{
 			"scheme": "http://hl7.org/fhir/tag",
