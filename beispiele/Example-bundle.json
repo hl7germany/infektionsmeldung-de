@@ -458,10 +458,10 @@
 					"display": "Gabriele Mustermann"
 				},
 				"focus": {
-					"reference": "Observation/exp_risk",
+					"reference": "Observation/exp_risk"
 				},
 				"effectivePeriod": {
-					"start: "2020-03-01",
+					"start": "2020-03-01",
 					"end": "2020-03-10"
 				},
 				"valueCoding": {
@@ -473,6 +473,7 @@
 						}
 					]
 				}
+			}
 		}
 	],
 	"signature": {
