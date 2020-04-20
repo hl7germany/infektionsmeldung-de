@@ -273,7 +273,7 @@
       </extension>
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="ToDo-haeufung" />
+      <fixedCode value="77980-1" />
     </element>
     <element id="Observation.component:Erkrankungshaeufung.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
