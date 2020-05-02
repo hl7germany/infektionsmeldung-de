@@ -6,7 +6,7 @@ before_script:
 
 script:
   - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
-  - java -jar validator.jar -version 4.0.0 terminologie
-  - java -jar validator.jar -version 4.0.0 datentypen-profile
-  - java -jar validator.jar -version 4.0.0 ressourcen-profile
-  - java -jar validator.jar -version 4.0.0 beispiele -ig datentypen-profile -ig ressourcen-profile -ig terminologie -recurse
+  - java -jar validator.jar -version 4.0.0 terminologie -ig hl7.fhir.uv.ips
+  - java -jar validator.jar -version 4.0.0 datentypen-profile -ig hl7.fhir.uv.ips
+  - java -jar validator.jar -version 4.0.0 ressourcen-profile -ig hl7.fhir.uv.ips
+  - java -jar validator.jar -version 4.0.0 beispiele -ig datentypen-profile -ig ressourcen-profile -ig terminologie -ig hl7.fhir.uv.ips -recurse

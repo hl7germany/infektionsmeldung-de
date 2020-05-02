@@ -26,11 +26,6 @@
     <name value="CDA (R2)" />
   </mapping>
   <mapping>
-    <identity value="fhirdocumentreference" />
-    <uri value="http://hl7.org/fhir/documentreference" />
-    <name value="FHIR DocumentReference" />
-  </mapping>
-  <mapping>
     <identity value="w5" />
     <uri value="http://hl7.org/fhir/fivews" />
     <name value="FiveWs Pattern Mapping" />
